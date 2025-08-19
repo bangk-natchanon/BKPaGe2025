@@ -1,0 +1,81 @@
+/* General styles */
+body {
+    font-family: 'KoHo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hamburger Menu Icon */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.menu-toggle .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Menu Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.menu-overlay.is-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-container {
+    text-align: center;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-link {
+    font-size: 2rem;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+    transition: color 0.2s ease-in-out;
+}
+
+.menu-link:hover {
+    color: #007bff;
+}
+
+/* Optional: Main content styling to show the effect */
+.main-content {
+    padding: 100px 20px;
+    text-align: center;
+}

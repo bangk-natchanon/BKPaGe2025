@@ -1,0 +1,155 @@
+/* General styles */
+:root {
+    --text-color: #000000;
+    --bg-light-gray: #d9d9d9;
+    --bg-white: #ffffff;
+}
+
+body {
+    font-family: 'KoHo', sans-serif;
+    background-color: var(--bg-white);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--bg-light-gray);
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-icon-link {
+    display: block;
+}
+
+.nav-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Main Content (Contact Section) */
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group-row {
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form-group-column {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    width: 100px; /* กำหนดความกว้างของ label เพื่อให้จัดระเบียบง่ายขึ้น */
+}
+
+.form-input,
+.form-textarea {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    align-self: flex-start; /* จัดตำแหน่งปุ่ม */
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--bg-light-gray);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 2.5rem;
+    }
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form-group-row {
+        gap: 0;
+    }
+    .form-group label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .footer-content p {
+        font-size: 1rem;
+    }
+    .nav-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
