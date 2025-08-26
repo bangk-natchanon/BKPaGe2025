@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menu-toggle');
     const menuOverlay = document.getElementById('menu-overlay');
 
@@ -26,4 +26,43 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleMenu();
         }
     });
+
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mainMenu = document.getElementById('main-menu');
+  const closeMenuBtn = document.querySelector('.close-menu');
+  const body = document.body;
+
+  function toggleMenu() {
+    mainMenu.classList.toggle('active');
+    body.classList.toggle('menu-open');
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+  }
+
+  // เปิด-ปิดเมนูเมื่อคลิกปุ่ม toggle
+  menuToggle.addEventListener('click', toggleMenu);
+
+  // ปิดเมนูเมื่อคลิกปุ่มปิดภายในเมนู
+  closeMenuBtn.addEventListener('click', toggleMenu);
+
+  // ปิดเมนูเมื่อคลิกพื้นที่ด้านนอกเมนู
+  document.addEventListener('click', (event) => {
+    // ตรวจสอบว่าคลิกนอกเมนูและปุ่ม toggle
+    const isClickInsideMenu = mainMenu.contains(event.target);
+    const isClickInsideToggle = menuToggle.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickInsideToggle && mainMenu.classList.contains('active')) {
+      toggleMenu();
+    }
+  }); */
+
+  // ปิดเมนูเมื่อมีการกดปุ่ม Esc
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && mainMenu.classList.contains('active')) {
+      toggleMenu();
+    }
+  });
 });
