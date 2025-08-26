@@ -155,6 +155,10 @@ body {
 
 }
 
+img {
+    height : 10%
+}
+
 /* Menu */
 .menu-toggle {
   display: block;
@@ -222,3 +226,4 @@ body {
   cursor: pointer;
   color: #333;
 }
+
