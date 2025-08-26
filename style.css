@@ -191,7 +191,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200%; /* กำหนดความกว้างของเมนู */
+    width: 20%; /* กำหนดความกว้างของเมนู */
     height: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 999;
@@ -243,4 +243,5 @@ body {
     padding: 100px 20px;
     text-align: center;
 }
+
 
