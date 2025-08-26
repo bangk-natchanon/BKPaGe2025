@@ -187,27 +187,35 @@ body {
 
 /* Menu Overlay */
 .menu-overlay {
+    /* กำหนดตำแหน่งให้อยู่ชิดมุมซ้ายบน */
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 200%; /* กำหนดความกว้างของเมนู */
     height: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 999;
-    display: flex;
+    /* ซ่อนเมนูไว้ทางซ้ายและใช้ transition */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    
+    /*display: flex;
     align-items: center;
     justify-content: center;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;*/
 }
 
 .menu-overlay.is-active {
-    visibility: visible;
-    opacity: 1;
+    transform: translateX(0); /* เลื่อนเมนูเข้ามาเมื่อ active */
+    /*visibility: visible;
+    opacity: 1;*/
 }
 
 .menu-container {
+    padding-top: 80px; /* เว้นช่องว่างด้านบนสำหรับไอคอน */
     text-align: center;
 }
 
@@ -235,3 +243,4 @@ body {
     padding: 100px 20px;
     text-align: center;
 }
+
