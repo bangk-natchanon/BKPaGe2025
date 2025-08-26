@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,22 @@
             <img src="menu.png" alt="Menu Icon" class="menu-icon">
         </button>
     </header>
-
+    <div class="menu-container">
+      <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <nav id="main-menu" class="menu">
+        <ul>
+          <li><a href="#home">หน้าแรก</a></li>
+          <li><a href="#about">เกี่ยวกับเรา</a></li>
+          <li><a href="#services">บริการ</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+        <button class="close-menu">✕</button>
+      </nav>
+    </div>
     <main class="hero-section page-container">
         <div class="hero-image-wrapper">
             <img src="home.png" alt="Profile picture" class="hero-image">
@@ -37,4 +52,5 @@
 </body>
 
 </html>
+
 
