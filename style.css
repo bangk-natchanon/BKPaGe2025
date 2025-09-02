@@ -22,24 +22,32 @@ body {
 /* Header */
 .site-header {
     background-color: var(--bg-light-gray);
-    padding: 20px 0;
+    padding: 10px 20px;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    /*gap: 15px;*/
 }
 
-.nav-icon-link {
+/* .nav-icon-link {
     display: block;
-}
+} */
 
 .nav-icon {
     width: 50px;
     height: 50px;
     display: block;
+}
+
+.menu-toggle,
+.home-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 /* Main Content (Contact Section) */
@@ -165,7 +173,7 @@ body {
     padding: 0;
 }
 
-/* Hamburger Menu Icon (Image Version) */
+/* /* Hamburger Menu Icon (Image Version) */
 .menu-toggle {
     position: fixed;
     top: 20px;
@@ -177,13 +185,13 @@ body {
     border: none;
     cursor: pointer;
     padding: 0;
-}
+} */
 
-.menu-icon-img {
+/* .menu-icon-img {
     width: 100%;
     height: 100%;
     display: block;
-}
+} */
 
 /* Menu Overlay */
 .menu-overlay {
@@ -191,7 +199,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 20%; /* กำหนดความกว้างของเมนู */
+    width: 300px; /* กำหนดความกว้างของเมนู */
     height: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 999;
@@ -226,12 +234,12 @@ body {
 }
 
 .menu-link {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #333;
     text-decoration: none;
-    padding: 15px 0;
+    padding: 15px 20px;
     display: block;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.2s /*ease-in-out*/; 
 }
 
 .menu-link:hover {
@@ -243,5 +251,6 @@ body {
     padding: 100px 20px;
     text-align: center;
 }
+
 
 
