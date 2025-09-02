@@ -32,9 +32,9 @@ body {
     /*gap: 15px;*/
 }
 
-.nav-icon-link {
+/* .nav-icon-link {
     display: block;
-}
+} */
 
 .nav-icon {
     width: 50px;
@@ -174,7 +174,7 @@ body {
 }
 
 /* Hamburger Menu Icon (Image Version) */
-.menu-toggle {
+/* .menu-toggle {
     position: fixed;
     top: 20px;
     left: 20px;
@@ -185,13 +185,21 @@ body {
     border: none;
     cursor: pointer;
     padding: 0;
-}
+} */
 
 /* .menu-icon-img {
     width: 100%;
     height: 100%;
     display: block;
 } */
+
+.menu-toggle,
+.home-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
 
 /* Menu Overlay */
 .menu-overlay {
@@ -251,6 +259,7 @@ body {
     padding: 100px 20px;
     text-align: center;
 }
+
 
 
 
